@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Ordering Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Food Ordering Website</h1>
+    </header>
+    <main>
+        <section id="menu">
+            <h2>Menu</h2>
+            <div class="menu-item">
+                <img src="bur.jpg">
+                <h3>Burger</h3>
+                <p>Delicious burger with fries</p>
+                <p>$5.99</p>
+                <button onclick="addToCart('Burger', 5.99)">Add to Cart</button>
+            </div>
+            <!-- Add more menu items here -->
+            <div class="menu-item">
+                <img src="bur.jpg" alt="Pizza">
+                <h3>Pizza</h3>
+                <p>Delicious pizza with your choice of toppings</p>
+                <p>$9.99</p>
+                <button onclick="addToCart('Pizza', 9.99)">Add to Cart</button>
+            </div>
+    
+            <!-- Menu Item 2 -->
+            <div class="menu-item">
+                <img src="bur.jpg" alt="Pasta">
+                <h3>Pasta</h3>
+                <p>Homemade pasta with a rich tomato sauce</p>
+                <p>$7.99</p>
+                <button onclick="addToCart('Pasta', 7.99)">Add to Cart</button>
+            </div>
+        </section>
+        
+
+        
+        
+
+        <section id="cart">
+            <h2>Cart</h2>
+            <ul id="cart-items">
+                <!-- Cart items will be displayed here -->
+            </ul>
+            <p>Total: $<span id="cart-total">0.00</span></p>
+            <button onclick="checkout()">Checkout</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

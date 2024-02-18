@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color:rgb(24, 111, 101);
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-top: 40px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .food-items {
+            display: flex;
+            flex-direction: column;
+            margin-top: 50px;
+        }
+
+        .row {
+            display: flex;  
+            margin-bottom: 40px;
+        }
+
+        .menu-item {
+            background-color: rgb(252, 224, 155);
+            border: 3px solid rgb(178, 83, 62);
+            padding: 20px;
+            margin: 0 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease-in-out;
+            width: 200px;
+        }
+
+        .menu-item img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            margin-bottom: 15px;
+        }
+
+        .menu-item p {
+            margin: 5px 0;
+        }
+
+        .menu-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+        }
+        .header {
+  width: 30%;
+  margin: 50px auto 0px;
+  color: white;
+  background: #49111c;
+  text-align: center;
+  border: 1px solid #B0C4DE;
+  border-bottom: none;
+  border-radius: 10px 10px 0px 0px;
+  padding: 20px;
+}
+
+
+</style>
+</head>
+<body>
+  <h1>FOOD ORDERING SYSTEM</h1>
+
+     <div class="food-items">
+      <h2 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;padding-left: 395px;">Menu</h2>
+
+        <div class="row">
+          <div class="menu-item" id="pepperoni">
+            <img src="https://storage.googleapis.com/alan-tutorial/web-sdk/pepperoni.jpg"/>
+            <p>Pepperoni Pizza</p>
+            <p>Price: <strong>$12.00</strong></p>
+          </div>
+          <div class="menu-item" id="margherita">
+            <img src="https://storage.googleapis.com/alan-tutorial/web-sdk/margherita.jpg"/>
+            <p>Margherita Pizza</p>
+            <p>Price: <strong>$10.00</strong></p>
+          </div>
+          <div class="menu-item" id="burrito">
+            <img src="https://storage.googleapis.com/alan-tutorial/web-sdk/burrito.jpg"/>
+            <p>Burrito</p>
+            <p>Price: <strong>$8.00</strong></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="menu-item" id="burger">
+            <img src="https://storage.googleapis.com/alan-tutorial/web-sdk/burger.jpg"/>
+            <p>Burger</p>
+            <p>Price: <strong>$6.00</strong></p>
+          </div>
+          <div class="menu-item" id="taco">
+            <img src="https://storage.googleapis.com/alan-tutorial/web-sdk/taco.jpg"/>
+            <p>Taco</p>
+            <p>Price: <strong>$4.00</strong></p>
+          </div>
+          <div class="menu-item" id="apple-pie">
+            <img src="https://storage.googleapis.com/alan-tutorial/web-sdk/applepie.jpg"/>
+            <p>Apple Pie</p>
+            <p>Price: <strong>$3.00</strong></p>
+          </div>
+        </div>
+      </div>
+      
+</body>
+</html>

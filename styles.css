@@ -1,0 +1,99 @@
+/* Updated CSS with more colorful styles */
+
+/* Header Styles */
+header{
+    background-color: #49111c; 
+    color: #fff;
+    text-align: center;
+    padding: 0.5px;
+    font-size: 24px;
+    border-radius: 20%;
+    margin-top:10%;
+    margin-right: 20%;
+    border-style: inherit;
+    border-width: 5px;
+    border-color: rgb(255, 255, 255);
+
+}
+
+/* Main Styles */
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+/* Menu Item Styles */
+.menu-item, .cart-item {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.menu-item:hover, .cart-item:hover {
+    transform: translateY(-5px);
+}
+
+.menu-item img {
+    max-width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 0 9px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    background-color:  #a9927d; /* Orange */
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #5e503f; /* Lighter Orange */
+}
+
+/* Cart Styles */
+#cart {
+    flex: 1;
+    margin-left: 2rem;
+}
+
+#cart h2 {
+    font-size: 20px;
+}
+
+#cart-items {
+    list-style: none;
+    padding: 0;
+}
+
+#cart-items li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+#cart-items li:last-child {
+    border-bottom: none;
+}
+
+#cart-total {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 1rem;
+}
+
+/* Checkout Button Style */
+#cart button {
+    background-color: #FF3333; /* Red */
+}
+
+#cart button:hover {
+    background-color: #FF6565; /* Lighter Red */
+}

@@ -1,0 +1,28 @@
+version: "2.0"
+
+intents:
+  - greet
+  - order_food
+  - check_menu
+  - goodbye
+
+entities:
+  - food_item
+
+responses:
+  utter_greet:
+    - text: "Welcome to the food ordering chatbot. What would you like to order?"
+
+  utter_menu:
+    - text: "Sure, here is the menu..."
+    - text: "Our menu includes pizza, burger, pasta, and sushi. What would you like to order?"
+
+  utter_goodbye:
+    - text: "Thank you for using our food ordering chatbot. Goodbye!"
+
+actions:
+  - utter_greet
+  - utter_menu
+  - utter_goodbye
+  - action_process_order
+  - action_unknown_intent
